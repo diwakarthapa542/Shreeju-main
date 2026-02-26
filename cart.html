@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <style>
+        /* Elegant Navigation */
+        nav {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            z-index: 1000;
+            /* backdrop-filter: blur(10px); */
+        }
+    </style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -178,6 +191,16 @@
 </head>
 
 <body>
+    <nav>
+        <div class="logo">Aura</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Curations</a>
+            <a href="#">The Studio</a>
+            <a href="cart.html"><i class="fa-thin fa-bag-shopping"></i> Cart (0)</a>
+            <a href="login.html"><i class="fa-thin fa-bag-shopping"></i> Login</a>
+        </div>
+    </nav>
     <div class="container">
         <h1>🛒 Shopping Cart</h1>
 
